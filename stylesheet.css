@@ -1,8 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background-color: black;
+    background-color: #081b29;
     color: white;
 }
+header {
+    position: sticky;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    z-index: 100;
+}
 
-h1 {
-    text-align: center;
+/* name on top left corner */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* nav bar on rhs */
+.nav-bar a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #ffffff;
+    margin-left: 35px;
+    padding: 10px;
+    transition: .3s;
+}
+
+/* nav bar while hovering */
+.nav-bar a:hover,
+.nav-bar a.activeg {
+    color: #00abf0;
 }
