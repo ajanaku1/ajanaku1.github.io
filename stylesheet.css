@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #081b29;
     color: white;
 }
 header {
@@ -47,6 +46,9 @@ header {
 
 .home {
     height: 100vh;
+    background: url(dahunsi.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -79,6 +81,7 @@ header {
 }
 
 .btn-box a {
+    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -92,4 +95,72 @@ header {
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box a:hover {
+    color: #081b29;
+}
+
+.btn-box a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-icn {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-icn a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-icn a:hover {
+    color: #081b29;
+}
+
+.home-icn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-icn a:hover:before {
+    width: 100%;
 }
