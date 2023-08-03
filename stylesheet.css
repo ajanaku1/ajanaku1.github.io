@@ -16,11 +16,11 @@ header {
     align-items: center;
     padding: 20px 10px;
     z-index: 100;
-    background-color: transparent;
+    background-color: #081b29;
 }
 
 /* name on top left corner */
-.logo {
+.logo a {
     font-size: 24px;
     font-weight: bold;
     padding: 10px;
@@ -45,6 +45,14 @@ header {
     color: #00abf0;
 }
 
+/* dropdown menu for smaller screens hidden by default */
+.dropdown { 
+    position: relative;
+    display: none;
+    width: 100%;
+}
+
+/* home section */
 .home {
     height: 100vh;
     background: url(dahunsi.jpeg) no-repeat;
@@ -164,4 +172,56 @@ header {
 
 .home-icn a:hover:before {
     width: 100%;
+}
+
+@media (max-width: 767px) {
+    .nav-bar>a {
+        display: none;
+    }
+
+    .home-icn {
+        margin-top: 10px;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .dropdown:focus .dropdown-content,
+    .dropdown:hover  .dropdown-content {
+    display: block;
+    }
+
+    .dropbtn {
+        /* display: inline; */
+        float: right;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        color: #ffffff;
+        border: none;
+    }
+
+    .dropdown-content {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+    }
+
+    .dropdown-content a {
+        display: block;
+        width: 100%S;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 500;
+        color: #ffffff;
+        transition: .3s;
+    }
+
+    .dropdown-content a:hover,
+    .dropdown-content a:active {
+        color: #00abf0;
+    }
 }
