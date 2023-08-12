@@ -55,9 +55,7 @@ header {
 /* home section */
 .home {
     height: 100vh;
-    background: url(dahunsi.jpeg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: #0b1337;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -192,11 +190,14 @@ header {
     display: block;
     }
 
+    .dropdown:focus .dropbtn,
+    .dropdown:hover  .dropbtn{
+        display: none;
+    }
+
     .dropbtn {
-        /* display: inline; */
         float: right;
-        justify-content: center;
-        align-items: center;
+        font-size: 1.5em;
         background-color: transparent;
         color: #ffffff;
         border: none;
