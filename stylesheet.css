@@ -63,6 +63,7 @@ header {
 
 .home-content {
     max-width: 600px;
+    margin-bottom: 5%;
 }
 
 .home-content h1 {
@@ -177,8 +178,8 @@ header {
         display: none;
     }
 
-    .home-icn {
-        margin-top: 10%;
+    .home-content {
+        margin-bottom: 10%;
     }
 
     .dropdown {
