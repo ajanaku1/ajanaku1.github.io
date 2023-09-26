@@ -181,6 +181,10 @@ header {
         display: none;
     }
 
+    .home {
+        margin-top: 70px;
+    }
+
     .home-content {
         margin-bottom: 20%;
     }
