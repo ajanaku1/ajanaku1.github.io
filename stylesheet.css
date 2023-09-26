@@ -5,7 +5,10 @@
 }
 body {
     color: white;
+    background-color: #0b1337;
 }
+
+/*... styling the header...*/
 header {
     position: fixed;
     top: 0;
@@ -19,7 +22,7 @@ header {
     background-color: #081b29;
 }
 
-/* name on top left corner */
+/*...name on top left corner....*/
 .logo a {
     font-size: 24px;
     font-weight: bold;
@@ -28,7 +31,7 @@ header {
     text-decoration: none;
 }
 
-/* nav bar on rhs */
+/*...nav bar on rhs...*/
 .nav-bar a {
     font-size: 18px;
     text-decoration: none;
@@ -39,20 +42,20 @@ header {
     transition: .3s;
 }
 
-/* nav bar while hovering */
+/*...nav bar while hovering...*/
 .nav-bar a:hover,
 .nav-bar a.active {
     color: #00abf0;
 }
 
-/* dropdown menu for smaller screens hidden by default */
+/*...dropdown menu for smaller screens hidden by default...*/
 .dropdown { 
     position: relative;
     display: none;
     width: 100%;
 }
 
-/* home section */
+/*...container for all content on home page...*/
 .home {
     height: 85vh;
     width: 100%;
@@ -62,6 +65,8 @@ header {
     padding: 0 10%;
     margin-top: 10px;
 }
+
+/*...styling the footer...*/
 footer {
     /*background-color: #0b1337;*/
     background-color: #081b29;
@@ -72,15 +77,18 @@ footer {
     padding: 0 10%;
 }
 
+/*...copy right content within the footer...*/
 footer>p {
     margin: 20px auto;
 }
 
+/*...home page content...*/
 .home-content {
     max-width: 600px;
     margin-bottom: 5%;
 }
 
+/*...home page content header...*/
 .home-content h1 {
     font-size: 52px;
     font-weight: 900;
@@ -92,17 +100,19 @@ footer>p {
     font-weight: 900;
     color: #00abf0;
 }
-
+/*...home page content paragraph...*/
 .home-content p {
     font-size: 16px;
     margin: 20px 0 40px;
 }
 
+/*...home page main button...*/
 .home-content .btn-box {
     width: 172px;
     height: 50px;
 }
 
+/*...link within the home page main button...*/
 .btn-box a {
     position: relative;
     display: inline-flex;
@@ -122,10 +132,12 @@ footer>p {
     overflow: hidden;
 }
 
+/*...home page main button while in hover state...*/
 .btn-box a:hover {
     color: #081b29;
 }
 
+/*...home page main button animation effects...*/
 .btn-box a::before {
     content: "";
     position: absolute;
@@ -142,13 +154,15 @@ footer>p {
     width: 100%;
 }
 
-.home-icn {
+/*...footer icons container...*/
+.foot-icn {
     width: 170px;
     display: flex;
     margin-top: 20px;
 }
 
-.home-icn a {
+/*...links within footer icons container...*/
+.foot-icn a {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -167,11 +181,13 @@ footer>p {
     transition: .5s;
 }
 
-.home-icn a:hover {
+/*...footer icons container while hovering...*/
+.foot-icn a:hover {
     color: #081b29;
 }
 
-.home-icn a::before {
+/*...footer icons container animation...*/
+.foot-icn a::before {
     content: "";
     position: absolute;
     top: 0;
@@ -183,17 +199,19 @@ footer>p {
     transition: .5s;
 }
 
-.home-icn a:hover:before {
+.foot-icn a:hover:before {
     width: 100%;
 }
 
+/*... responsiveness for smaller devices*/
 @media (max-width: 767px) {
     .nav-bar > a {
         display: none;
     }
 
     .home {
-        margin-top: 70px;
+        height: 100vh;
+        margin-top: 80px;
         margin-bottom: 0;
         width: 100%;
     }
@@ -202,14 +220,15 @@ footer>p {
         margin-bottom: 20%;
     }
 
-    .home-icn {
+    .foot-icn {
         position: relative;
         width: 100%;
         flex-direction: row;
         padding: 20px 0;
+        margin-top: 0;
     }
 
-    .home-icn a {
+    .foot-icn a {
         width: 40px;
         height: 40px;
         margin-right: 20px;
@@ -218,9 +237,6 @@ footer>p {
     .dropdown {
         display: block;
     }
-
-    /* ... rest of your mobile styles ... */
-
 
     .dropdown:focus .dropdown-content,
     .dropdown:hover  .dropdown-content {
