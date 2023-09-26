@@ -68,7 +68,6 @@ header {
 
 /*...styling the footer...*/
 footer {
-    /*background-color: #0b1337;*/
     background-color: #081b29;
     width: 100%;
     display: flex;
@@ -88,18 +87,25 @@ footer>p {
     margin-bottom: 5%;
 }
 
-/*...home page content header...*/
-.home-content h1 {
+/*...heading...*/
+h1 {
     font-size: 52px;
     font-weight: 900;
     line-height: 1.2;
 }
 
-.home-content h3 {
+ h3 {
     font-size: 32px;
     font-weight: 900;
     color: #00abf0;
 }
+
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
 /*...home page content paragraph...*/
 .home-content p {
     font-size: 16px;
@@ -203,6 +209,63 @@ footer>p {
     width: 100%;
 }
 
+
+/*... styling the about page...*/
+.main {
+    height: 85vh;
+    width: 100%;
+    background-color: #0b1337;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    margin-top: 90px;
+}
+
+.main-content {
+    max-width: 600px;
+    margin-bottom: 5%;
+}
+
+.main-content h1::after {
+    content: "";
+    display: inline-block;
+    width: 600px;
+    height: 300px;
+    background-image: url(IMG_E0611.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px 0;
+    border: 2px solid #081b29;
+    border-radius: 40px 20px;
+    margin-left: 10px;
+}
+
+/*...Portfolio content...*/
+.portfolio {
+    max-width: 300px;
+    margin-left: 15%;
+}
+
+.portfolio h3{
+    color:#ffffff
+}
+
+.portfolio-item {
+    margin: 10px;
+}
+
+.portfolio-item a {
+    color: #00abf0;
+}
+
+img {
+    max-width: 600px;
+    max-height: auto;
+    margin: 20px 0;
+    border: 2px solid #081b29;
+    border-radius: 40px 20px;
+}
+
 /*... responsiveness for smaller devices*/
 @media (max-width: 767px) {
     .nav-bar > a {
@@ -220,6 +283,7 @@ footer>p {
         margin-bottom: 20%;
     }
 
+ 
     .foot-icn {
         position: relative;
         width: 100%;
@@ -277,5 +341,41 @@ footer>p {
     .dropdown-content a:hover,
     .dropdown-content a:active {
         color: #00abf0;
+    }
+
+    /*...styling the about page for this screen size...*/
+    .main {
+        height: auto;
+        margin-top: 80px;
+        margin-bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10%;
+    }
+
+    .main-content {
+        max-width: 600px;
+        margin-bottom: 20%;
+    }
+    
+    /*...footer copy right content...*/
+    footer > p {
+        margin: 20px auto;
+    }
+
+    .main-content h1::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        max-height: 200px;
+        background-image: url(IMG_E0611.JPG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 20px 0;
+        border: 2px solid #081b29;
+        border-radius: 40px 20px;
+        margin-left: 10px;
     }
 }
