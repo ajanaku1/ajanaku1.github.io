@@ -258,38 +258,19 @@ h4 {
     color: #00abf0;
 }
 
-img {
-    max-width: 600px;
-    max-height: auto;
-    margin: 20px 0;
-    border: 2px solid #081b29;
-    border-radius: 40px 20px;
-}
-
-.portfolio-carousel {
-  width: 100%;
-  max-width: 600px; /* Adjust as needed */
-  height: 400px; /* Adjust as needed */
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-slide {
-  width: 100%;
-  height: 100%;
-  display: none;
-}
-
-.carousel-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 /*... responsiveness for smaller devices*/
 @media (max-width: 767px) {
     .nav-bar > a {
         display: none;
+    }
+
+    .dropdown-content a[href="about.html"] {
+        color: #ffffff;
+    }
+
+    .dropdown-content a.active {
+        color: #00abf0;
     }
 
     .home {
