@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const menuBtn = document.querySelector('.dropbtn');
     const dropdown = document.querySelector('.dropdown-content');
-
     const header = document.querySelector('header');
 
     menuBtn.addEventListener('click', (e) => {
         e.preventDefault(); // Prevent the default link behavior
         dropdown.classList.toggle('active');
+        e.stopPropagation(); // Stop event propagation to prevent closing
     });
 
     // Close the dropdown when clicking outside of the header
@@ -24,9 +24,5 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!header.contains(e.target) && e.target !== menuBtn) {
             dropdown.classList.remove('active');
         }
-    });
-    
-    menuBtn.addEventListener('click', () => {
-        dropdown.classList.toggle('active');
     });
 });

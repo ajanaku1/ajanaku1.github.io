@@ -327,6 +327,7 @@ h4 {
         justify-content: center;
         align-items: center;
         z-index: 5;
+        margin-top: 30px;
     }
 
     .dropdown-content a {
