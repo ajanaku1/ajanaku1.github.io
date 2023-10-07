@@ -24,4 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
             dropdown.classList.remove('active');
         }
     });
+    
+    menuBtn.addEventListener('click', () => {
+        dropdown.classList.toggle('active');
+    });
 });
