@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
     menuBtn.addEventListener('click', (e) => {
         e.preventDefault(); // Prevent the default link behavior
         dropdown.classList.toggle('active');
-        e.stopPropagation(); // Stop event propagation to prevent closing
     });
 
     // Close the dropdown when clicking outside of the header
