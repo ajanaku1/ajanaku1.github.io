@@ -10,7 +10,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <script src="index.js"></script>
 </head>
 <body>
     <header>
@@ -19,13 +18,13 @@
         </div>
         <nav class="nav-bar">
             <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
+            <a href="#about">About</a>
 
             <div class="dropdown">
                 <button class="dropbtn"><i class='bx bx-menu'></i></button>
                 <div class="dropdown-content">
                     <a href="index.html" class="active">Home</a>
-                    <a href="about.html">About</a>
+                    <a href="#about">About</a>
                 </div>
                 <script src="index.js"></script>
             </div>
@@ -37,12 +36,11 @@
             <h1>Hi, I am Ajanaku Dahunsi.</h1>
             <h3>Frontend Developer</h3>
             <p>
-                As an aspiring front-end developer, I am passionate about bringing your web ideas to life and creating remarkable online experiences.
-                Don't hesitate to get in touch and explore the possibilities. Simply click on the inviting 'Let's Talk!' button. 
-                Whether you have a specific project in mind or just want to discuss your web development needs, I am here to listen, 
-                collaborate, and turn your vision into reality.
-                Every great web project begins with a conversation, and I am eager to start that conversation with you. 
-                Let's connect, explore, and make your digital dreams come true. Your journey into the digital realm begins with a simple click!
+                Passionate about bringing web ideas to life, 
+                I create remarkable online experiences. 
+                Whether you have a specific project or want 
+                to discuss web development needs, 
+                I'm here to collaborate and turn your vision into reality.
             </p>
             <div class="btn-box">
                 <a href="mailto:mykdahunsi@gmail.com">Let's Talk!</a>
@@ -50,6 +48,48 @@
         </div>
         <div class="home-content home-photo">
             <img src="Images/bg.png" />
+        </div>
+    </section>
+    <section class="main" id="about">
+        <div class="main-content">
+            <h1 id="about-h1">About Me</h1>
+            <p>
+                As an enthusiastic front-end developer, 
+                I specialize in crafting outstanding web 
+                experiences. Proficient in HTML, CSS, and 
+                JavaScript, I transform ideas into visually 
+                appealing, user-friendly websites.
+            </p>
+            
+        </div>
+        <div class="portfolio">
+            <h3>Explore My Portfolio Below:</h3>
+            <div class="portfolio-item">
+                <h4>Calculator App</h4>
+                <p>A calculator web app using using HTML, CSS and JavaScript.
+                   See <a href="https://my-calc-app-gamma.vercel.app/" target="_blank">here!</a>
+                </p>
+            </div>
+            
+            <div class="portfolio-item">
+                <h4>Simple Blog layout Design</h4>
+                <p>This is a design of a responsive blog home page using html, css and JavaScript. 
+                   See github repository <a href="https://github.com/ajanaku1/aflix.github.io.git" target="_blank">here!</a> 
+                </p>
+            </div>
+            <!-- <div class="portfolio-carousel">
+                <div class="carousel-slide">
+                    <a>
+                        <img src="calc.jpg" alt="Calculator app">
+                    </a>
+                </div>
+                 <div class="carousel-slide">
+                    <a>
+                        <img src="image2.jpg" alt="Project 2">
+                    </a>
+                </div>
+              </div> -->
+              
         </div>
     </section>
     <footer>
@@ -60,5 +100,6 @@
         </div>
         <p>&copy; 2023 Ajanaku Dahunsi. All Rights Reserved.</p>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

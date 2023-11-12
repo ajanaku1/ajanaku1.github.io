@@ -227,7 +227,7 @@ h4 {
 
 /*... styling the about page...*/
 .main {
-    height: 85vh;
+    height: auto;
     width: 100%;
     background-color: #0b1337;
     display: flex;
@@ -364,6 +364,11 @@ img {
     }
 
     /*...styling the about page for this screen size...*/
+
+    #about-h1 {
+        text-align: center;
+    }
+
     .main {
         height: auto;
         margin-top: 80px;
@@ -380,7 +385,7 @@ img {
         margin-bottom: 20%;
     }
     
-    /*...footer copy right content...*/
+    /*...footer copy-right content...*/
     footer > p {
         margin: 20px auto;
     }
@@ -390,12 +395,15 @@ img {
         display: inline-block;
         width: 100%;
         max-height: 200px;
-        background-image: url(/Images/IMG_E0611.JPG);
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin: 20px 0;
+        background-image: url(/Images/IMG_E0611.JPG) no-repeat center center/ cover;
+        margin: 20px;
         border: 2px solid #081b29;
         border-radius: 40px 20px;
-        margin-left: 10px;
+        margin-left: 0;
+    }
+
+    .portfolio {
+        margin-left: 0;
+        margin-bottom: 40px;
     }
 }
