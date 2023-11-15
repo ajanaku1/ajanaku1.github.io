@@ -9,8 +9,8 @@ html {
 }
 body {
     color: white;
-    /* background-color: #0b1337; */
     background: url("Images/IMG_E0611.JPG") no-repeat center center/ cover;
+    font-family: 'poppins' 'sans serif';
 }
 
 /*... styling the header...*/
@@ -108,13 +108,19 @@ h1 {
  h3 {
     font-size: 2rem;
     font-weight: 900;
-    color: #00abf0;
+    color: #ffffff;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     color: #00abf0;
+}
+
+p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
 }
 
 /*...home page main button...*/
@@ -265,6 +271,48 @@ h4 {
     margin: 5% auto;
 }
 
+/*... styling the portfoilo section...*/
+.portfolio-section {
+    height: auto;
+    width: 100%;
+    background-color: #0b1337;
+    opacity: 0.95;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.portfolio-item {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% auto;
+}
+
+.item-description {
+    width: 40%;
+}
+
+.item-description h4 {
+    margin-bottom: 10px;
+}
+
+.item-container {
+    width: 50%;
+}
+
+.item-container img {
+    width: 100%;
+    border-radius: 20px;
+    transition: 500ms ease-in-out;
+}
+
+.item-container img:hover {
+    transform: scale(1.1);
+}
+
 /*... responsiveness for smaller devices*/
 @media (max-width: 767px) {
     .nav-bar > a {
@@ -374,6 +422,15 @@ h4 {
     
     #skills {
         width: 100%;
+    }
+
+    .portfolio-item {
+        flex-direction: column;
+    }
+
+    .item-description, .item-container {
+        width: 100%;
+        margin: 10px auto;
     }
     
     /*...footer copy-right content...*/
