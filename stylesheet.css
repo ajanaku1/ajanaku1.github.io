@@ -343,9 +343,9 @@ p {
     }
 
     
-.home-content h1 {
-    font-size: 3rem;
-}
+    .home-content h1 {
+        font-size: 3rem;
+    }
  
     .foot-icn {
         position: relative;
@@ -363,18 +363,11 @@ p {
     }
 
     .dropdown {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    .dropdown:focus .dropdown-content,
-    .dropdown:hover  .dropdown-content {
-    display: block;
-    }
-
-    .dropdown:focus .dropbtn,
-    .dropdown:hover  .dropbtn{
-        display: none;
-    }
 
     .dropbtn {
         float: right;
@@ -382,6 +375,18 @@ p {
         background-color: transparent;
         color: #ffffff;
         border: none;
+    }
+
+    .dropbtn:hover {
+        cursor: pointer;
+        background: #00abf0;
+        color: #081b29;
+        opacity: 0.5;
+        border-radius: 4px;
+    }
+
+    .dropbtn i {
+        margin-top: 4px;
     }
 
     .dropdown-content {
@@ -402,12 +407,11 @@ p {
         transition: .3s;
     }
 
-    .dropdown-content a:hover,
-    .dropdown-content a:active {
+    .dropdown-content a:hover {
         color: #00abf0;
     }
 
-    /*...styling the about page for this screen size...*/
+    /*...styling the about section for this screen size...*/
 
     
 
