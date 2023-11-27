@@ -379,10 +379,6 @@ p {
 
     .dropbtn:hover {
         cursor: pointer;
-        background: #00abf0;
-        color: #081b29;
-        opacity: 0.5;
-        border-radius: 4px;
     }
 
     .dropbtn i {

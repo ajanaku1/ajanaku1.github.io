@@ -8,7 +8,6 @@ $(".dropbtn").click(function() {
         $(".bx").removeClass("bx-x").addClass("bx-menu");
     }
 
-    
 });
 
 
