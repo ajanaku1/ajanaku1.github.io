@@ -1,14 +1,14 @@
-import fcc from "../assets/fcc-Certificate.jpeg";
-import jsEC from "../assets/js-essentials.png";
-import htmlIcon from "../assets/icons8-html-96.png";
-import cssIcon from "../assets/icons8-css-96.png";
-import tailwindIcon from "../assets/icons8-tailwindcss-96.png";
-import js from "../assets/icons8-javascript-96.png";
-import git from "../assets/icons8-git-96.png";
-import github from "../assets/icons8-github-96.png";
-import jquery from "../assets/icons8-jquery-96.png";
-import reactIcon from "../assets/icons8-react-96.png";
-import vIcon from "../assets/icons8-vite-96.png";
+import fcc from "../assets/fcc.jpeg";
+import jsEC from "../assets/jsEC.png";
+import htmlIcon from "../assets/htmlIcon.png";
+import cssIcon from "../assets/cssIcon.png";
+import tailwindIcon from "../assets/tailwindIcon.png";
+import js from "../assets/js.png";
+import git from "../assets/git.png";
+import github from "../assets/github.png";
+import jquery from "../assets/jquery.png";
+import reactIcon from "../assets/reactIcon.png";
+import vIcon from "../assets/vIcon.png";
 
 const About = () => {
   const certs = [
