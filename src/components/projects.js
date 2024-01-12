@@ -15,7 +15,8 @@ export const projects = [
             digestible summaries. Effortlessly summarize any article with a
             simple URL input, access your history in a snap 📚, and share
             insights with a click 🌐. Built with React, Vite, and Tailwind CSS,
-            Briefly offers a seamless and futuristic reading experience.`,
+            Briefly offers a seamless and futuristic reading experience with a 
+            light and dark mode switch functionality.`,
   },
   {
     name: "VAGNAV",

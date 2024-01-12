@@ -58,7 +58,7 @@ const About = () => {
         <div id="certification">
           <h4>Certifications</h4>
           {certs.map((cert, index) => (
-            <a key={index} href={cert.link}>
+            <a key={index} onClick={() => window.open(cert.link)}>
               <img src={cert.src} alt={cert.name} />
             </a>
           ))}
