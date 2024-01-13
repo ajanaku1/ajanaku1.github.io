@@ -12,6 +12,7 @@ const Portfolio = () => {
           </div>
           <div className="item-container">
             <img
+              className="project_img"
               src={project.src}
               alt={project.alt}
               onClick={() => window.open(project.link)}

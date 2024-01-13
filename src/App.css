@@ -113,8 +113,8 @@ html {
   @apply w-1/2;
 }
 
-.item-container img {
-  @apply w-full rounded-2xl hover:scale-110 ease-in-out duration-500;
+.project_img {
+  @apply w-full rounded-2xl hover:scale-110 transition-transform ease-in-out duration-500;
 }
 
 /*... contact section style component ...*/
