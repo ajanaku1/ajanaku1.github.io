@@ -1,22 +1,33 @@
 const Footer = () => {
+  const socialIcons = [
+    {
+      link: "https://github.com/ajanaku1",
+      class: "bx bxl-github",
+    },
+    {
+      link: "https://www.linkedin.com/in/dahunsi-ajanaku-5a080b286",
+      class: "bx bxl-linkedin",
+    },
+    {
+      link: "https://www.instagram.com/dahunsi___/",
+      class: "bx bxl-instagram",
+    },
+  ];
   return (
     <footer className="footer">
       <div className="foot-icn">
-        <a onClick={() => window.open("https://github.com/ajanaku1")}>
-          <i className="bx bxl-github"></i>
-        </a>
-        <a
-          onClick={() =>
-            window.open("https://www.linkedin.com/in/dahunsi-ajanaku-5a080b286")
-          }
-        >
-          <i className="bx bxl-linkedin"></i>
-        </a>
-        <a onClick={() => window.open("https://www.instagram.com/dahunsi___/")}>
-          <i className="bx bxl-instagram"></i>
-        </a>
+        {socialIcons.map((icon, index) => (
+          <a key={index} className="ftl">
+            <i
+              className={icon.class}
+              onClick={() => window.open(icon.link)}
+            ></i>
+          </a>
+        ))}
       </div>
-      <p>&copy; 2023 Ajanaku Dahunsi. All Rights Reserved.</p>
+      <p className="write_up">
+        &copy; 2023 Ajanaku Dahunsi. All Rights Reserved.
+      </p>
     </footer>
   );
 };

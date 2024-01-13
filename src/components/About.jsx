@@ -37,8 +37,8 @@ const About = () => {
 
   return (
     <section className="about-section" id="about">
-      <h3>About Me</h3>
-      <p>
+      <h3 className="section_heading">About Me</h3>
+      <p className="write_up">
         {`" From tinkering with lines of code to crafting visually stunning
         designs, I thrive in the dynamic world where technology and creativity
         converge. " I am Ajanaku Dahunsi and you're welcome to my digital space!`}
@@ -55,16 +55,16 @@ const About = () => {
         watching a movie or taking long walks.`}
       </p>
       <div className="about-content">
-        <div id="certification">
-          <h4>Certifications</h4>
+        <div className="certification">
+          <h4 className="subheading">Certifications</h4>
           {certs.map((cert, index) => (
             <a key={index} onClick={() => window.open(cert.link)}>
               <img src={cert.src} alt={cert.name} />
             </a>
           ))}
         </div>
-        <div id="skills">
-          <h4>My Tech Stack</h4>
+        <div className="skills">
+          <h4 className="subheading">My Tech Stack</h4>
           <div className="skill-icons">
             {skills.map((skill, index) => (
               <span key={index} className="icon">
@@ -72,7 +72,7 @@ const About = () => {
               </span>
             ))}
           </div>
-          <p>
+          <p className="write_up">
             {`In this ever-evolving tech landscape, I'm a perpetual student. But
             my learning extends beyond the realms of tech. I find joy in
             exploring diverse subjects and cultivating a curiosity that knows no

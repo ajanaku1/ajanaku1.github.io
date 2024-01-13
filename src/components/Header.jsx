@@ -20,7 +20,11 @@ const Header = () => {
 
         <div className="dropdown">
           <button className="dropbtn" onClick={toggleDropdown}>
-            <i className={isDropdownOpen ? "bx bx-x" : "bx bx-menu"}></i>
+            <i
+              className={
+                isDropdownOpen ? "bx_header bx bx-x" : "bx_header bx bx-menu"
+              }
+            ></i>
           </button>
           <div className={isDropdownOpen ? "show" : "dropdown-content"}>
             <a href="#home">Home</a>

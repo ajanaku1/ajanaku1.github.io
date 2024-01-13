@@ -1,373 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  @apply m-0 p-0 box-border;
 }
 
 html {
   scroll-behavior: smooth;
 }
-body {
-  color: white;
-  background: url("./assets/bgImg.JPG") no-repeat center center/ cover;
-  font-family: "poppins", sans-serif;
-  height: 100%;
-  overflow-x: hidden;
+@layer base {
+  body {
+    @apply h-full  transition-colors duration-300;
+    background: url("./assets/bgImg.JPG") no-repeat center center/ cover;
+    font-family: "poppins", sans-serif;
+  }
 }
 
 /*...Typography...*/
-h1 {
-  font-size: 4rem;
-  font-weight: 900;
-  line-height: 1.2;
+
+.section_heading {
+  @apply text-3xl font-extrabold dark:text-gray-300  text-gray-600;
 }
 
-h3 {
-  font-size: 2rem;
-  font-weight: 900;
-  color: lightgray;
+.subheading {
+  @apply text-3xl font-bold dark:text-cyan-500 text-cyan-950;
 }
 
-h4 {
-  font-size: 28px;
-  font-weight: 700;
-  color: #00abf0;
-}
-
-p {
-  font-size: 18px;
-  letter-spacing: 1px;
-  line-height: 24px;
+.write_up {
+  @apply text-lg dark:text-white text-black;
 }
 
 /* ... header component styles ...*/
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 10px;
-  z-index: 100;
-  background-color: #081b29;
-  margin-bottom: 10px;
+  @apply fixed top-0 left-0 w-full flex justify-between items-center px-2.5 py-5 z-10 dark:bg-gray-900 bg-gray-300 mb-3;
 }
 
 .logo a {
-  font-size: 24px;
-  font-weight: bold;
-  padding: 10px;
-  color: #ffffff;
-  text-decoration: none;
+  @apply text-2xl font-bold p-2.5 dark:text-white text-black no-underline;
 }
 
 .nav-bar {
-  margin-right: 20px;
+  @apply mr-5;
 }
 
 .nav-bar a {
-  font-size: 18px;
-  text-decoration: none;
-  font-weight: 500;
-  color: #ffffff;
-  margin-left: 35px;
-  padding: 10px;
-  transition: 0.3s;
-}
-
-.nav-bar a:hover,
-.nav-bar a.active {
-  color: #00abf0;
+  @apply text-lg no-underline font-medium dark:text-white text-black ml-8 p-2.5 hover:text-cyan-500 dark:hover:text-cyan-500 focus:text-cyan-500 dark:focus:text-cyan-500;
 }
 
 .dropdown {
-  position: relative;
-  display: none;
-  width: 100%;
+  @apply relative hidden w-full;
 }
 
 /* ... home section component styles ... */
 
 .home {
-  height: 60vh;
-  width: 100%;
-  background-color: #0b1337;
-  opacity: 0.9;
-  padding: 10%;
+  @apply w-full opacity-80 p-[10%] h-3/5 dark:bg-indigo-950 bg-indigo-100;
 }
 
 .home-content {
-  max-width: 80%;
-  margin: auto;
+  @apply w-4/5 m-auto;
 }
 
 /*... about section component styles ...*/
 .about-section {
-  height: auto;
-  width: 100%;
-  background-color: #0b1337;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 10%;
+  @apply w-full h-auto flex flex-col items-center py-5 px-40 dark:bg-indigo-950 bg-indigo-100;
 }
 
 .about-content {
-  max-width: 100%;
-  margin: 20px auto;
-  display: flex;
-  justify-content: space-between;
+  @apply w-full my-5 mx-auto flex justify-between;
 }
 
 .about-section h3 {
-  text-align: center;
-  padding: 10px;
+  @apply items-center p-2.5;
 }
 
-#certification {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  padding: 10px;
+.certification {
+  @apply flex flex-col w-2/5 p-2.5;
 }
 
-#certification a img {
-  width: 100%;
-  margin: 10px auto;
-  opacity: 0.7;
-  border: none;
-  border-radius: 10px;
+.certification a img {
+  @apply w-full my-2.5 mx-auto opacity-70 border-0 rounded-xl hover:cursor-pointer;
 }
 
-#skills {
-  width: 40%;
+.skills {
+  @apply w-2/5;
 }
 
 .skill-icons {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 5% auto;
+  @apply w-full flex flex-wrap justify-between my-[5%] mx-auto;
 }
 
 /*... portfoilo section component styles ...*/
 .portfolio-section {
-  height: auto;
-  width: 100%;
-  background-color: #0b1337;
-  opacity: 0.95;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 10%;
+  @apply h-auto w-full opacity-95 flex flex-col items-center py-5 px-[10%] dark:bg-indigo-950 bg-indigo-100;
 }
 
 .portfolio-item {
-  height: auto;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: 5% auto;
+  @apply h-auto w-full flex justify-between my-[5%] mx-auto;
 }
 
 .item-description {
-  width: 40%;
+  @apply w-2/5;
 }
 
 .item-description h4 {
-  margin-bottom: 10px;
+  @apply mb-2.5;
 }
 
 .item-container {
-  width: 50%;
+  @apply w-1/2;
 }
 
 .item-container img {
-  width: 100%;
-  border-radius: 20px;
-  transition: 500ms ease-in-out;
-}
-
-.item-container img:hover {
-  transform: scale(1.1);
+  @apply w-full rounded-2xl hover:scale-110 ease-in-out duration-500;
 }
 
 /*... contact section style component ...*/
 
 .contact-section {
-  height: auto;
-  width: 100%;
-  background-color: #0b1337;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  @apply h-auto w-full flex flex-col items-center justify-between dark:bg-indigo-950 bg-indigo-100;
 }
 
 .contact-section p {
-  width: 80%;
+  @apply w-4/5;
 }
 
 .btn-box {
-  width: 172px;
-  height: 50px;
-  margin: 20px;
+  @apply m-5 h-12 w-44;
 }
 
 .btn-box a {
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 100%;
-  background-color: transparent;
-  border: 2px solid #00abf0;
-  border-radius: 8px;
-  font-size: 24px;
-  color: #00abf0;
-  text-decoration: none;
-  font-weight: 700;
-  letter-spacing: 1px;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.btn-box a:hover {
-  color: #081b29;
+  @apply border-2 dark:border-cyan-500 relative border-cyan-950 inline-flex z-10 justify-center items-center w-36 h-full bg-transparent no-underline rounded-lg text-2xl dark:text-cyan-500 text-cyan-900 dark:hover:text-cyan-950 hover:text-gray-300 font-bold overflow-hidden;
 }
 
 .btn-box a::before {
+  @apply dark:bg-cyan-500 bg-cyan-950;
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #00abf0;
   z-index: -1;
   transition: 0.5s;
 }
 
 .btn-box a:hover::before {
-  width: 100%;
+  @apply w-full;
 }
 
 /*... footer section component icon ...*/
 .footer {
-  background-color: #081b29;
-  width: 100%;
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 10%;
+  @apply w-full mb-0 flex flex-col items-center py-0 px-[10%] dark:bg-gray-900 bg-gray-300;
 }
 
 .footer > p {
-  margin: 20px auto;
+  @apply my-5 mx-auto;
 }
 
 .foot-icn {
-  width: 170px;
-  display: flex;
-  margin-top: 20px;
+  @apply w-44 flex mt-5;
 }
 
-.foot-icn a {
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  margin-right: auto;
-  background-color: transparent;
-  border: 2px solid #00abf0;
-  border-radius: 50%;
-  font-size: 20px;
-  color: #00abf0;
-  text-decoration: none;
-  z-index: 1;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-.foot-icn a:hover {
-  color: #081b29;
-}
-
-.foot-icn a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #00abf0;
-  z-index: -1;
-  transition: 0.5s;
-}
-
-.foot-icn a:hover:before {
-  width: 100%;
+.ftl {
+  @apply relative inline-flex justify-center items-center w-10 h-10 mr-auto bg-transparent border-2 dark:border-cyan-500 text-xl border-cyan-900 dark:text-cyan-500 text-cyan-950 dark:hover:text-gray-950 hover:text-gray-300 dark:hover:bg-cyan-500 hover:bg-cyan-950 rounded-full  no-underline z-10 overflow-clip transition ease-in-out duration-500;
 }
 
 @media (max-width: 767px) {
   .nav-bar > a {
-    display: none;
+    @apply hidden;
   }
 
   .home {
-    height: auto;
-    margin-top: 10%;
-    padding: auto;
+    @apply h-auto mt-[10%] p-16;
   }
 
   .home-content h1 {
-    font-size: 2.4rem;
-  }
-
-  .foot-icn {
-    position: relative;
-    width: 100%;
-    flex-direction: row;
-    padding: 20px 0;
-    margin-top: 0;
-    justify-content: center;
-  }
-
-  .foot-icn a {
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
+    @apply text-4xl;
   }
 
   .dropdown {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .dropbtn {
-    float: right;
-    font-size: 1.5em;
-    background-color: transparent;
-    color: #ffffff;
-    border: none;
-    margin-bottom: 10px;
-  }
-
-  .dropbtn:hover {
-    cursor: pointer;
-  }
-
-  .dropbtn i {
-    margin-top: 4px;
+    @apply flex flex-col justify-between;
   }
 
   .dropdown-content {
@@ -375,77 +190,47 @@ p {
     transition: height 5s ease;
   }
 
+  .bx_header {
+    @apply text-3xl text-cyan-950 dark:text-white hover:text-cyan-500 dark:hover:text-cyan-500;
+  }
+
   .show {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    z-index: 5;
+    @apply w-full flex flex-col justify-center z-50 items-start;
     transition: height 0.5s ease;
-  }
-
-  .dropdown-content a {
-    display: block;
-    width: 100%;
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: 500;
-    color: #ffffff;
-    transition: 0.3s;
-  }
-
-  .dropdown-content a:hover {
-    color: #00abf0;
   }
 
   /*...styling the about section for this screen size...*/
 
   .about-section {
-    height: auto;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 10%;
+    @apply mb-0 flex flex-col items-center py-2.5 px-[10%];
   }
 
   .about-content {
-    max-width: 600px;
-    margin-bottom: 20%;
-    flex-direction: column;
+    @apply max-w-xl mb-[20%] flex-col;
   }
 
-  #certification {
-    width: 100%;
-    padding: 10px;
-    margin: 5% auto;
+  .certification {
+    @apply w-full p-2.5 my-[5%] mx-auto;
   }
 
-  #skills {
-    width: 100%;
+  .skills {
+    @apply w-full;
   }
 
   .portfolio-item {
-    flex-direction: column;
+    @apply flex-col;
   }
 
   .item-description,
   .item-container {
-    width: 100%;
-    margin: 10px auto;
+    @apply w-full my-2.5 mx-auto;
   }
 
   .contact-section {
-    flex-direction: column;
+    @apply flex-col;
   }
 
   .contact-section h3 {
-    margin-bottom: 1%;
-  }
-
-  /*...footer copy-right content...*/
-  footer > p {
-    margin: 20px auto;
+    @apply mb-5;
   }
 }
