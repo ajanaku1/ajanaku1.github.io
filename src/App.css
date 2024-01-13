@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  @apply m-0 p-0 box-border;
+  @apply m-0 p-0 box-border transition-colors duration-500;
 }
 
 html {
@@ -11,7 +11,7 @@ html {
 }
 @layer base {
   body {
-    @apply h-full  transition-colors duration-300;
+    @apply h-full;
     background: url("./assets/bgImg.JPG") no-repeat center center/ cover;
     font-family: "poppins", sans-serif;
   }
