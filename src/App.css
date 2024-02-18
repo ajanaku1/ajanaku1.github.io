@@ -77,7 +77,7 @@ html {
 }
 
 .certification {
-  @apply flex flex-col w-2/5 p-2.5;
+  @apply flex flex-col w-1/2 p-8 mx-3 dark:bg-gray-900/50 bg-gray-300/50 shadow rounded-lg;
 }
 
 .certification a img {
@@ -85,7 +85,7 @@ html {
 }
 
 .skills {
-  @apply w-2/5;
+  @apply w-1/2 p-8 mx-3 dark:bg-gray-900/50 bg-gray-300/50 shadow rounded-lg;
 }
 
 .skill-icons {
@@ -98,7 +98,7 @@ html {
 }
 
 .portfolio-item {
-  @apply h-auto w-full flex justify-between my-[5%] mx-auto;
+  @apply h-auto w-full flex justify-between my-3 mx-auto p-12 dark:bg-gray-900/50 bg-gray-300/50 shadow rounded-lg;
 }
 
 .item-description {
@@ -202,7 +202,7 @@ html {
   /*...styling the about section for this screen size...*/
 
   .about-section {
-    @apply mb-0 flex flex-col items-center py-2.5 px-[10%];
+    @apply mb-0 flex flex-col items-center py-2.5 px-[8%];
   }
 
   .about-content {
@@ -210,15 +210,15 @@ html {
   }
 
   .certification {
-    @apply w-full p-2.5 my-[5%] mx-auto;
+    @apply w-full p-6 my-[5%] mx-auto;
   }
 
   .skills {
-    @apply w-full;
+    @apply w-full p-6 mx-auto;
   }
 
   .portfolio-item {
-    @apply flex-col;
+    @apply flex-col p-6;
   }
 
   .item-description,

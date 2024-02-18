@@ -4,11 +4,14 @@ import htmlIcon from "../assets/htmlIcon.png";
 import cssIcon from "../assets/cssIcon.png";
 import tailwindIcon from "../assets/tailwindIcon.png";
 import js from "../assets/js.png";
-import git from "../assets/git.png";
 import github from "../assets/github.png";
 import jquery from "../assets/jquery.png";
 import reactIcon from "../assets/reactIcon.png";
 import vIcon from "../assets/vIcon.png";
+import cordovaIcon from "../assets/apache-cordova.png";
+import wpIcon from "../assets/wp.png";
+import php from "../assets/php.png";
+import mysql from "../assets/mysql.png";
 
 const About = () => {
   const certs = [
@@ -28,11 +31,14 @@ const About = () => {
     { src: cssIcon, name: "css icon" },
     { src: tailwindIcon, name: "tailwin icon" },
     { src: js, name: "javascript icon" },
-    { src: git, name: "git icon" },
     { src: github, name: "github icon" },
     { src: jquery, name: "jquery icon" },
     { src: reactIcon, name: "react icon" },
     { src: vIcon, name: "vite icon" },
+    { src: php, name: "php icon" },
+    { src: mysql, name: "mysql icon" },
+    { src: cordovaIcon, name: "apache-cordova" },
+    { src: wpIcon, name: "wordpress" },
   ];
 
   return (
@@ -73,16 +79,15 @@ const About = () => {
             ))}
           </div>
           <p className="write_up">
-            {`In this ever-evolving tech landscape, I'm a perpetual student. But
-            my learning extends beyond the realms of tech. I find joy in
-            exploring diverse subjects and cultivating a curiosity that knows no
-            bounds. From reading about the latest advancements to picking up a
-            new hobby, I'm always seeking to broaden my horizons. To me every
-            project is a puzzle waiting to be solved. My analytical mindset and
-            love for problem-solving drive me to find innovative solutions to
-            challenges. I thrive in collaborative environments, where diverse
-            perspectives come together to create something greater than the sum
-            of its parts.`}
+            {`I have experience crafting digital experiences using a variety of tools and technologies.
+             On the front end, I'm familiar with HTML, CSS, and JavaScript, and can navigate between 
+             React and jQuery with ease. I have a keen eye for detail when it comes to styling and am 
+             able to use Tailwind CSS to create beautiful designs. On the back end, I'm comfortable working 
+             with Node.js and am currently diving into PHP and SQL to create complex functionality. 
+             I'm also well-versed in Firebase, which allows me to build powerful applications quickly and easily. 
+             When it comes to mobile development, I'm skilled in Apache Cordova and React Native, and 
+             I can create versatile applications that work across a range of platforms. My proficiency extends 
+             to a range of tools, from Vite to WordPress, and I'm able to use Git and GitHub for version control with ease.`}
           </p>
         </div>
       </div>

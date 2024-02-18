@@ -1,3 +1,4 @@
+import pagedResumee from "../assets/resumeeapp.png";
 import brieflyImg from "../assets/briefly.png";
 import vagnavImg from "../assets/vagnav.png";
 import theSurfImg from "../assets/thesurf.png";
@@ -5,6 +6,19 @@ import todoImg from "../assets/todo-pic.png";
 import calcImg from "../assets/calc.png";
 
 export const projects = [
+  {
+    name: "Paged Resumee App",
+    src: pagedResumee,
+    alt: "paged resumee image",
+    link: " https://github.com/ajanaku1/pagedresumee",
+    desc: `Elevate your CV presentation with PagedResume, a dynamic Android 
+            app crafted using Apache Cordova and appJs. Seamlessly navigate through 
+            the chapters of your professional journey with multi-page functionality, 
+            offering an interactive and visually engaging experience. Showcase your 
+            skills, experiences, and accomplishments in a way that captivates and impresses. 
+            Elevate your CV game with PagedResume - because your story deserves more 
+            than just a page turn.`,
+  },
   {
     name: "Briefly",
     src: brieflyImg,
