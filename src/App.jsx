@@ -30,7 +30,7 @@ function App() {
     <main className={`${darkMode && "dark"}`}>
       <img
         src={darkMode ? litMode : drkMode}
-        className="fixed top-5 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full cursor-pointer z-50 transition-transform duration-200"
+        className="theme-switch-icon"
         onClick={toggleDarkMode}
       />
       <Header />

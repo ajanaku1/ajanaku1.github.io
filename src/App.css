@@ -34,15 +34,15 @@ html {
 /* ... header component styles ...*/
 
 .header {
-  @apply fixed top-0 left-0 w-full flex justify-between items-center px-2.5 py-5 z-10 dark:bg-gray-900 bg-gray-300 mb-3;
+  @apply fixed top-0 left-0 w-full flex justify-between items-center px-2.5 py-5 z-10 dark:bg-gray-900 bg-gray-400 mb-3;
 }
 
-.logo a {
-  @apply text-2xl font-bold p-2.5 dark:text-white text-black no-underline;
+.logo {
+  @apply h-16 w-16 ml-8;
 }
 
 .nav-bar {
-  @apply mr-5;
+  @apply mr-[40%];
 }
 
 .nav-bar a {
@@ -53,6 +53,10 @@ html {
   @apply relative hidden w-full;
 }
 
+.theme-switch-icon {
+  @apply fixed  top-5 right-4 w-12 h-12 rounded-full cursor-pointer z-50 transition-transform duration-200;
+}
+
 /* ... home section component styles ... */
 
 .home {
@@ -60,7 +64,11 @@ html {
 }
 
 .home-content {
-  @apply w-4/5 m-auto;
+  @apply flex align-middle justify-center w-4/5 m-auto;
+}
+
+.hero-container {
+  @apply w-1/2 h-auto;
 }
 
 /*... about section component styles ...*/
@@ -88,8 +96,8 @@ html {
   @apply w-1/2 p-8 mx-3 dark:bg-gray-900/50 bg-gray-300/50 shadow rounded-lg drop-shadow-xl;
 }
 
-.skill-icons {
-  @apply w-full flex flex-wrap justify-between my-[5%] mx-auto drop-shadow;
+.progress-bar-label {
+  @apply flex align-middle mb-1 text-base font-medium text-blue-700 dark:text-yellow-500;
 }
 
 /*... portfoilo section component styles ...*/
@@ -173,10 +181,24 @@ html {
     @apply hidden;
   }
 
-  .home {
-    @apply h-auto mt-[10%] p-16;
+  .nav-bar {
+    @apply mr-5;
   }
 
+  .theme-switch-icon {
+    @apply fixed top-5 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full cursor-pointer z-50 transition-transform duration-200;
+  }
+
+  .home {
+    @apply h-auto mt-[10%];
+  }
+  .home-content {
+    @apply w-full flex-col-reverse mt-12;
+  }
+
+  .hero-container {
+    @apply w-full mb-8;
+  }
   .home-content h1 {
     @apply text-4xl;
   }

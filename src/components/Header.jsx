@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from "../assets/favicon-16x16.png";
 
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -9,9 +10,10 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">
-        <a href="#home">AD.</a>
-      </div>
+      <a href="#home">
+        <img src={logo} alt="my logo" className="logo" size={25} />
+      </a>
+
       <nav className="nav-bar">
         <a href="#home">Home</a>
         <a href="#about">About</a>

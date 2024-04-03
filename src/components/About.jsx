@@ -1,17 +1,6 @@
 import fcc from "../assets/fcc.jpeg";
 import jsEC from "../assets/jsEC.png";
-import htmlIcon from "../assets/htmlIcon.png";
-import cssIcon from "../assets/cssIcon.png";
-import tailwindIcon from "../assets/tailwindIcon.png";
-import js from "../assets/js.png";
-import github from "../assets/github.png";
-import jquery from "../assets/jquery.png";
-import reactIcon from "../assets/reactIcon.png";
-import vIcon from "../assets/vIcon.png";
-import cordovaIcon from "../assets/apache-cordova.png";
-import wpIcon from "../assets/wp.png";
-import php from "../assets/php.png";
-import mysql from "../assets/mysql.png";
+import ProgressBar from "./ProgressBar";
 
 const About = () => {
   const certs = [
@@ -25,20 +14,6 @@ const About = () => {
       name: "Cisco Certificate",
       link: "https://www.credly.com/badges/5a8842de-4077-46fe-b5c5-f53f1677ead3/public_url",
     },
-  ];
-  const skills = [
-    { src: htmlIcon, name: "html icon" },
-    { src: cssIcon, name: "css icon" },
-    { src: tailwindIcon, name: "tailwin icon" },
-    { src: js, name: "javascript icon" },
-    { src: github, name: "github icon" },
-    { src: jquery, name: "jquery icon" },
-    { src: reactIcon, name: "react icon" },
-    { src: vIcon, name: "vite icon" },
-    { src: php, name: "php icon" },
-    { src: mysql, name: "mysql icon" },
-    { src: cordovaIcon, name: "apache-cordova" },
-    { src: wpIcon, name: "wordpress" },
   ];
 
   return (
@@ -71,13 +46,8 @@ const About = () => {
         </div>
         <div className="skills">
           <h4 className="subheading">My Tech Stack</h4>
-          <div className="skill-icons">
-            {skills.map((skill, index) => (
-              <span key={index} className="icon">
-                <img src={skill.src} alt={skill.name} />
-              </span>
-            ))}
-          </div>
+          <ProgressBar />
+
           <p className="write_up">
             {`I have experience crafting digital experiences using a variety of tools and technologies.
              On the front end, I'm familiar with HTML, CSS, and JavaScript, and can navigate between 
