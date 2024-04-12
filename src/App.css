@@ -77,7 +77,7 @@ html {
 }
 
 .about-content {
-  @apply w-full my-5 mx-auto flex justify-between;
+  @apply w-full my-8 mx-auto flex justify-between;
 }
 
 .about-section h3 {

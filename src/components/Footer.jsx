@@ -5,7 +5,7 @@ const Footer = () => {
       class: "bx bxl-github",
     },
     {
-      link: "https://www.linkedin.com/in/dahunsi-ajanaku-5a080b286",
+      link: "https://www.linkedin.com/in/dahunsiajanaku/",
       class: "bx bxl-linkedin",
     },
     {
